@@ -11,7 +11,7 @@
 header {
     max-width: 1440px;
     margin: 0px auto;
-}
+} 
 
 nav {
     display: flex;
@@ -34,8 +34,6 @@ nav span {
     color: #ff42a5;
 
 }
-/* yt color #f61c0d */
-
 .nav-title {
     font-size: 2.8rem;
     font-weight: 700;
@@ -65,4 +63,33 @@ nav li a {
     padding: 18px 20px 18px 24px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
+}
+
+
+/* Responsive using Media Query */
+
+/* Mobile device */
+@media screen and (max-width:576px) {
+    nav, nav ul {
+       flex-direction: column;
+    }
+    .logo{
+        margin-top: 60px;
+        margin-bottom: 24px;
+    }
+    nav li{
+        margin-bottom: 24px;
+    }
+
+}
+
+/* Tablet device */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav {
+        flex-direction: column;
+     }
+     .logo{
+        margin-top: 60px;
+        margin-bottom: 24px;
+    }
 }
