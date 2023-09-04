@@ -50,7 +50,6 @@ nav ul {
 
 nav span {
     color: #ff42a5;
-
 }
 
 .nav-title {
@@ -146,6 +145,7 @@ nav li a {
 
 .online-games-section {
     margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .online-games-section span {
@@ -163,7 +163,7 @@ nav li a {
     margin: 0;
 }
 
-.online-games-section p {
+.online-games-section p{
     color: #534C64;
     text-align: center;
     font-size: 1.125rem;
@@ -178,7 +178,40 @@ nav li a {
     transition: 0.2s;
 }
 
+/* Play instantly section */
+.play-instantly-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
 
+}
+
+.play-instantly-section span {
+    color: #ff42a5;
+}
+
+.play-instantly-section h3 {
+    color: #0B0223;
+    text-align: end;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.play-instantly-section p {
+    color: #534C64;
+    text-align: end;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.game-image div{
+    position: relative;
+   
+}
+.game-image .floating-image{
+    position: absolute;
+    bottom: -120px;
+    left: -120px;
+}
 
 /* Responsive using Media Query */
 
