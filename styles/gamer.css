@@ -1,0 +1,68 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+/* Shared Styles */
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* header section */
+header {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav span {
+    color: #ff42a5;
+
+}
+/* yt color #f61c0d */
+
+.nav-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1.125rem;
+}
+#youtube{
+    color: #f61c0d;
+    padding: 0 18px 0 20px;
+    transform: scale(1.7);
+}
+#tiktok{
+    transform: scale(1.5);
+}
+.follow-btn {
+    padding: 18px 20px 18px 24px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
