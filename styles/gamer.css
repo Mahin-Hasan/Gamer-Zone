@@ -6,12 +6,26 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.primary-btn {
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 40px;
+    border: none;
+}
+
 
 /* header section */
 header {
-    max-width: 1440px;
-    margin: 0px auto;
-} 
+    /* max-width: 1440px; */
+    /* margin: 0px auto; */
+    padding: 0 240px 0 240px;
+    background-image: url('../images/Group14.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
 
 nav {
     display: flex;
@@ -22,7 +36,6 @@ nav {
 nav div {
     display: flex;
     align-items: center;
-
 }
 
 nav ul {
@@ -34,6 +47,7 @@ nav span {
     color: #ff42a5;
 
 }
+
 .nav-title {
     font-size: 2.8rem;
     font-weight: 700;
@@ -51,33 +65,99 @@ nav li a {
     color: #3C354F;
     font-size: 1.125rem;
 }
-#youtube{
+
+#youtube {
     color: #f61c0d;
     padding: 0 18px 0 20px;
     transform: scale(1.7);
 }
-#tiktok{
+
+#tiktok {
     transform: scale(1.5);
 }
+
 .follow-btn {
     padding: 18px 20px 18px 24px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
 }
 
+/* Banner section */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-bg {
+    /* width: 100%;
+    background-image: url('../images/Group14.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-position: bottom right, top left; */
+}
+
+.banner h4 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.banner h1 {
+    font-size: 5.8rem;
+    margin: 0;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner ul {
+    padding: 0;
+    margin-bottom: 41px;
+}
+
+.banner li {
+    list-style: none;
+    font-weight: 500;
+}
+
+.banner i {
+    padding-right: 15px;
+}
+
+.banner li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #534C64;
+
+}
+
+#blue_btn {
+    background: #4EC5F7;
+}
 
 /* Responsive using Media Query */
 
 /* Mobile device */
 @media screen and (max-width:576px) {
-    nav, nav ul {
-       flex-direction: column;
+    header {
+        padding: 0;
     }
-    .logo{
+
+    nav,
+    nav ul {
+        flex-direction: column;
+    }
+
+    .logo {
         margin-top: 60px;
         margin-bottom: 24px;
     }
-    nav li{
+
+    nav li {
         margin-bottom: 24px;
     }
 
@@ -85,10 +165,15 @@ nav li a {
 
 /* Tablet device */
 @media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 0;
+    }
+
     nav {
         flex-direction: column;
-     }
-     .logo{
+    }
+
+    .logo {
         margin-top: 60px;
         margin-bottom: 24px;
     }
