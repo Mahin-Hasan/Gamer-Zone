@@ -145,12 +145,14 @@ nav li a {
 @media screen and (max-width:576px) {
     header {
         padding: 0;
+        background: none;
     }
 
     nav,
     nav ul {
         flex-direction: column;
     }
+
 
     .logo {
         margin-top: 60px;
@@ -159,6 +161,27 @@ nav li a {
 
     nav li {
         margin-bottom: 24px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-bg {
+        background-image: url('../images/Group14.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* background-position: bottom left; */
+    }
+
+    .banner-content {
+        padding: 130px 0;
+    }
+    .banner-img{
+        text-align: center;
+    }
+    .banner-img img {
+        width: 80%;
     }
 
 }
@@ -176,5 +199,17 @@ nav li a {
     .logo {
         margin-top: 60px;
         margin-bottom: 24px;
+    }
+    .banner-img{
+        text-align: center;
+    }
+    .banner-img img {
+        width: 80%;
+    }
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .banner-content {
+        padding: 130px 0;
     }
 }
