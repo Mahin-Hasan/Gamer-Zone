@@ -260,7 +260,7 @@ nav li a {
 footer {
     /* background-color: bisque; */
     background: #14053f;
-        margin-top: 118px;
+    margin-top: 118px;
     /* max-width: 1440px;
     margin: 0px auto; */
 }
@@ -449,6 +449,25 @@ footer {
         height: 30px;
     }
 
+    .footer-options,
+    .footer-socials,
+    .footer-policy {
+        padding: 10px 30px;
+    }
+
+    .footer-options ul,
+    .footer-socials ul {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 25px;
+    }
+
+    .footer-policy ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
 }
 
 /* Tablet device */
@@ -518,6 +537,11 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding: 20px;
+    }
+    .footer-options,
+    .footer-socials,
+    .footer-policy {
+        padding: 10px 30px;
     }
 
 }
