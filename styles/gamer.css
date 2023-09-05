@@ -278,13 +278,6 @@ nav li a {
         background: none;
     }
 
-    .action-section {
-        margin-top: 500px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-
     nav,
     nav ul,
     .games-container,
@@ -358,6 +351,36 @@ nav li a {
         margin-top: 0px;
     }
 
+    .action-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+    }
+
+    .action-section div {
+        text-align: end;
+    }
+
+    .button-info {
+        font-size: 0.7rem;
+        padding: 3px 0px 5px 25px;
+    }
+
+    .icon {
+        margin-right: 10px;
+        width: 0;
+        height: 0;
+    }
+
+    .icon img {
+        position: relative;
+        left: -23px;
+        top: -4px;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 /* Tablet device */
@@ -393,13 +416,40 @@ nav li a {
 
     .games-container {
         display: grid;
-        /* grid-auto-columns: auto; */
         grid-template-columns: repeat(2, 1fr);
         grid-template-columns: repeat;
-        /* justify-content: space-between; */
         align-items: center;
-        /* gap: 20px; */
         margin-top: 50px;
         justify-content: center;
     }
+
+    .play-instantly-section {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .play-instantly-section p,
+    .play-instantly-section h3 {
+        text-align: center;
+    }
+
+    .game-image {
+        text-align: end;
+    }
+
+    .game-image .right-image {
+        width: 80%;
+    }
+
+    .game-image .floating-image {
+        left: 32px;
+        width: 38%;
+    }
+
+    .action-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 20px;
+    }
+
 }
