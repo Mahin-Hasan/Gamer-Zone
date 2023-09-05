@@ -24,8 +24,6 @@ main {
 
 /* header section */
 header {
-    /* max-width: 1440px; */
-    /* margin: 0px auto; */
     padding: 0 240px 0 240px;
     background-image: url('../images/Group14.png');
     background-repeat: no-repeat;
@@ -171,16 +169,16 @@ nav li a {
 
 }
 
-/* .toggle-visibility {
-    display: none;
-} */
-
-
-
 .search-icon img {
     width: 80px;
     height: 80px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), lightgray 50% / cover no-repeat;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-icon p {
@@ -190,7 +188,8 @@ nav li a {
 .search-icon {
     display: none;
 }
-.card{
+
+.card {
     position: relative;
 }
 
@@ -203,20 +202,11 @@ nav li a {
     flex-direction: column;
     width: 338px;
     height: 394px;
-    /* border-radius: 16px; */
-    /* background-color: #bba9e6; */
     border-radius: 16px;
     border: 4px solid var(--Linear, #FF42A5);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), lightgray 50% / cover no-repeat;
     opacity: 0.8;
 }
-
-/* .card:hover {
-    border-radius: 16px;
-    border: 4px solid var(--Linear, #FF42A5);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url("../images/search.png"), lightgray 50% / cover no-repeat;
-    transition: 0.2s;
-} */
 
 /* Play instantly section */
 .play-instantly-section {
@@ -261,7 +251,6 @@ nav li a {
     margin-top: 180px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* grid-auto-rows: minmax(auto, auto); */
     grid-auto-flow: row;
     row-gap: 20px;
 }
@@ -298,11 +287,8 @@ nav li a {
 
 /* Footer Section */
 footer {
-    /* background-color: bisque; */
     background: #14053f;
     margin-top: 118px;
-    /* max-width: 1440px;
-    margin: 0px auto; */
 }
 
 .footer-heading {
@@ -398,7 +384,12 @@ footer {
         align-items: center;
         text-align: center;
     }
-
+    .search-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
 
     .logo {
         margin-top: 60px;
@@ -417,7 +408,6 @@ footer {
         background-image: url('../images/Group14.png');
         background-repeat: no-repeat;
         background-size: contain;
-        /* background-position: bottom left; */
     }
 
     .banner-content {
