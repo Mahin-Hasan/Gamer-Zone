@@ -163,7 +163,7 @@ nav li a {
     margin: 0;
 }
 
-.online-games-section p{
+.online-games-section p {
     color: #534C64;
     text-align: center;
     font-size: 1.125rem;
@@ -197,17 +197,20 @@ nav li a {
     font-size: 3rem;
     font-weight: 700;
 }
+
 .play-instantly-section p {
     color: #534C64;
     text-align: end;
     font-size: 1.125rem;
     font-weight: 400;
 }
-.game-image div{
+
+.game-image div {
     position: relative;
-   
+
 }
-.game-image .floating-image{
+
+.game-image .floating-image {
     position: absolute;
     bottom: -120px;
     left: -120px;
@@ -224,7 +227,8 @@ nav li a {
 
     nav,
     nav ul,
-    .games-container {
+    .games-container,
+    .play-instantly-section {
         flex-direction: column;
     }
 
@@ -264,6 +268,33 @@ nav li a {
 
     .banner-img img {
         width: 80%;
+    }
+
+    .game-image {
+        text-align: end;
+    }
+
+    .right-image {
+        width: 88%;
+        padding-right: 10px;
+    }
+
+    .game-image .floating-image {
+        width: 35%;
+        bottom: -46px;
+        left: 4px;
+    }
+
+    .play-instantly-section {
+        gap: 70px;
+    }
+
+    .play-instantly-section p,
+    .play-instantly-section h3 {
+        text-align: center;
+    }
+    .play-instantly-section h3{
+        margin-top: 0px;
     }
 
 }
